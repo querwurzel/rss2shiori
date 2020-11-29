@@ -1,9 +1,5 @@
-import { assert } from "https://deno.land/std@0.79.0/testing/asserts.ts";
-import {
-  deserializeFeed,
-  FeedType,
-  RSS2
-} from "https://deno.land/x/rss@0.2.6/mod.ts";
+import { assert } from "testing/asserts";
+import { deserializeFeed, FeedType, RSS2 } from "x/rss";
 
 /*
 Usage:
@@ -44,7 +40,7 @@ const rss2shiori = (shiori: string, ...rss: string[]) => {
               tags,
               "--title",
               title,
-              "--offline"
+              "--offline",
             ],
           },
         );

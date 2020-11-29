@@ -8,11 +8,11 @@ some script importing rss feeds to shiori
 
 ## Prologue
 
-`deno run --allow-run --allow-read import.ts /bin/echo sample.rss`
+`deno run --unstable --import-map=import_map.json --allow-run --allow-read import.ts /bin/echo sample.rss`
 
 ## Usage
 
-1. `deno run --allow-run --allow-read import.ts /path/to/shiori bookmarks.rss`
+1. `deno run --unstable --import-map=import_map.json --allow-run --allow-read import.ts /path/to/shiori bookmarks.rss`
 2. update shiori afterwards by calling `shiori update`
 
 ## Epilogue
